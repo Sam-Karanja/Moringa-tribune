@@ -1,8 +1,9 @@
-from django.conf.urls import url, include
+from django.conf.urls import url
 from .import views
 
 urlpatterns = [
-    url('^$', views.welcome, name  = 'welcome')
+    url('^news.today$', views.welcome, name  = 'welcome')
+    # url(r'^today/', views.welcome, name = 'welcome')
     ]
 
 
